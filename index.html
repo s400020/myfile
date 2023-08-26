@@ -1,0 +1,54 @@
+<html>
+<head>
+<title> The content of your website goes here  </title>
+</head>
+<body style="background-color: cyan;">
+
+
+
+
+<div class="row">
+<div class="image-container"></div><img id="donut1" src="img/bad memories.png" width="200" height="200"/></div>
+<div class="image-container"></div><img id="donut2" src="img/friends.png" width="200" height="200"/></div>
+<div class="image-container"></div><img id="donut3" src="img/games.png" width="200" height="200"/></div>
+</div>
+
+<div class="row">
+<div class="image-container"></div><img id="donut4" src="img/happy memories.png" width="200" height="200"/></div>
+<div class="image-container"></div><img id="donut5" src="img/love.png" width="200" height="200"/></div>
+<div class="image-container"></div><img id="donut6" src="img/mind.png" width="200" height="200"/></div>
+</div>
+
+<div class="row">
+<div class="image-container"></div><img id="donut1" src="img/school.png" width="200" height="200"/></div>
+<div class="image-container"></div><img id="donut2" src="img/shopping.png" width="200" height="200"/></div>
+<div class="image-container"></div><img id="donut3" src="img/wedding.png" width="200" height="200"/></div>
+</div>
+
+<script>
+var sound1 = new buzz.sound("sound/bad memory.mp3"); 
+var sound2 = new buzz.sound("sound/games.mp3");
+var sound3 = new buzz.sound("sound/love.mp3");
+var sound4 = new buzz.sound("sound/happy memories.mp3");
+var sound5 = new buzz.sound("sound/love.mp3");
+var sound6 = new buzz.sound("sound/mind.mp3");
+var sound7 = new buzz.sound("sound/school.mp3");
+var sound8 = new buzz.sound("sound/shopping.mp3");
+var sound9 = new buzz.sound("sound/wedding.mp3");
+
+    window.onload = function() {
+        document.getElementById('bad memories').addEventListener('click', function () {sound1.play(); });  
+        document.getElementById('friends').addEventListener('click', function () {sound2.play(); });
+        document.getElementById('games').addEventListener('click', function () {sound3.play(); });
+        document.getElementById('happy memories').addEventListener('click', function () {sound4.play(); });
+        document.getElementById('love').addEventListener('click', function () {sound5.play(); }); 
+        document.getElementById('mind').addEventListener('click', function () {sound6.play(); }); 
+        document.getElementById('school').addEventListener('click', function () {sound7.play(); }); 
+        document.getElementById('shopping').addEventListener('click', function () {sound8.play(); }); 
+        document.getElementById('wedding').addEventListener('click', function () {sound9.play(); });
+    }  
+</script>   
+
+</body>
+
+</html>
